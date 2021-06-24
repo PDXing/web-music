@@ -1,17 +1,31 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-import PXDiscover from '@/pages/discover';
-import PXRecommend from '@/pages/discover/c-pages/recommend';
-import PXRanking from '@/pages/discover/c-pages/ranking';
-import PXSongs from '@/pages/discover/c-pages/songs';
-import PXDjradio from '@/pages/discover/c-pages/djradio';
-import PXArtist from '@/pages/discover/c-pages/artist';
-import PXAlbum from '@/pages/discover/c-pages/album';
-import PXPlayer from '@/pages/player';
+const PXDiscover = React.lazy(() => import('@/pages/discover'));
+const PXRecommend = React.lazy(() =>
+  import('@/pages/discover/c-pages/recommend')
+);
+const PXRanking = React.lazy(() => import('@/pages/discover/c-pages/ranking'));
+const PXSongs = React.lazy(() => import('@/pages/discover/c-pages/songs'));
+const PXDjradio = React.lazy(() => import('@/pages/discover/c-pages/djradio'));
+const PXArtist = React.lazy(() => import('@/pages/discover/c-pages/artist'));
+const PXAlbum = React.lazy(() => import('@/pages/discover/c-pages/album'));
+const PXPlayer = React.lazy(() => import('@/pages/player'));
 
-import PXMine from '@/pages/mine';
-import PXFriend from '@/pages/friend';
+const PXMine = React.lazy(() => import('@/pages/mine'));
+const PXFriend = React.lazy(() => import('@/pages/friend'));
+
+// import PXDiscover from '@/pages/discover';
+// import PXRecommend from '@/pages/discover/c-pages/recommend';
+// import PXRanking from '@/pages/discover/c-pages/ranking';
+// import PXSongs from '@/pages/discover/c-pages/songs';
+// import PXDjradio from '@/pages/discover/c-pages/djradio';
+// import PXArtist from '@/pages/discover/c-pages/artist';
+// import PXAlbum from '@/pages/discover/c-pages/album';
+// import PXPlayer from '@/pages/player';
+
+// import PXMine from '@/pages/mine';
+// import PXFriend from '@/pages/friend';
 
 const routes = [
   {
